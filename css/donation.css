@@ -1,0 +1,584 @@
+section{
+    width:80%;
+    margin:auto;
+    padding:1em;
+    margin-bottom:1em;
+  }
+  input,select{
+    padding:1em;
+    text-align: left;
+    font: Light 20px/32px Helvetica;
+    letter-spacing: -0.4px;
+    color: #FFFFFF;
+    background-color:transparent;
+    border:none;
+    border-bottom:1px solid #C1F7D5;
+  }
+  #button{
+    background: #C1F7D5 0% 0% no-repeat padding-box;
+    border-radius: 100px;
+    opacity: 1;
+    text-align: center;
+    font: Bold 1em Helvetica;
+    color: #354463;
+  }
+  a{
+    text-decoration: underline;
+    font: Light 15px/56px Helvetica;
+    letter-spacing: -0.16px;
+    color: #C1F7D5;
+  }
+  header h2{
+    display:flex;
+    justify-content:center;
+  }
+    main{
+    width:100%;
+    background: transparent url('../img/annie-spratt-427340-unsplash-(1).png') no-repeat center;
+    background-size: cover;
+    opacity: 0.63;
+  }
+    .wrapper{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    grid-gap:2em;
+  }
+    .header{
+    grid-column:2/3;
+    text-align: center;
+    color: #FFFFFF;
+    font-size:40px;
+    font-family:Helvetica;
+  }
+  
+  .form .head{
+    text-align: left;
+    font: Bold 28px/36px Helvetica;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+  }
+  .form label{
+    text-align: left;
+    font: Regular 14px/17px Helvetica;
+    letter-spacing: 0.56px;
+    color: #FFFFFF;
+  }
+  .form{
+    background: #354463 0% 0% no-repeat padding-box;
+    opacity: 1;
+    grid-column:1/2;
+    grid-row:1/2;
+    padding:1em;
+    display:grid;
+    grid-template-columns:1fr;
+    grid-gap:10px;
+  }
+  .top-form{
+    grid-column:1/2;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr 1fr;
+    grid-gap:10px;
+  }
+  .top-form .fname{
+    grid-column:1/2;
+    display:grid;
+    grid-gap:2px;
+  }
+  .top-form .lname{
+    grid-column:2/3;
+    display:grid;
+    grid-gap:2px;
+  }
+  .top-form .street-address{
+    grid-column:1/3;
+    display:grid;
+  }
+  .top-form .city{
+    grid-column:1/2;
+    display:grid;
+  }
+  .top-form .state{
+    grid-column:2/3;
+    display:grid;
+    grid-gap:2px;
+    grid-template-columns:1fr 1fr;
+  }
+  /*make state in single column*/
+  .top-form #state{
+    display:grid;
+  }
+  .top-form .email{
+    grid-column:1/3;
+    display:grid;
+  }
+  .middle-form{
+    grid-column:1/2;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:1fr 1fr;
+    grid-gap:10px;
+  }
+  .middle-form .card{
+    grid-column:1/3;
+    display:grid;
+  }
+  .middle-form .card-expire{
+    grid-column:1/2;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+  } 
+  /*group expiration month and year*/
+  .middle-form .card-year{
+    display:grid;
+    grid-gap:1em;
+  }
+  .middle-form .card-security{
+    grid-column:2/3;
+    display:grid;
+  } 
+  .bottom-form{
+    grid-column:1/2;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+  }
+  footer section{
+    display:grid;
+    grid-template-columns:1fr 4fr 1fr;
+    grid-gap:5px;
+  }
+  footer #footer-head{
+    grid-column:1/2;
+    place-self:center;
+    text-align: left;
+    font: Bold 22px/28px Helvetica;
+    letter-spacing: 0px;
+    color: #354463;
+    opacity: 1;
+  }
+  footer #footer-mid{
+    grid-column:2/3;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-gap:10px;
+  }
+  footer #footer-mid h3{
+    text-align: left;
+    font: Regular 14px/17px Helvetica;
+    letter-spacing: 0.56px;
+    color: #354463;
+  }
+  footer #footer-mid p{
+    text-align: left;
+    font: Light 14px/20px Helvetica;
+    letter-spacing: -0.14px;
+    color: #354463;
+  }
+  footer #footer-end{
+    grid-column:3/4;
+    place-self:center;
+    text-align: right;
+    font: Regular 44px/46px Flood Std;
+    letter-spacing: 0px;
+    color: #354463;
+  } 
+  
+   @media only screen and (min-width: 320px) and (max-width: 767px){ 
+  main{
+    max-width:100%;
+    background: transparent url('../img/annie-spratt-427340-unsplash-(1).png') no-repeat center;
+    background-size: cover;
+    padding:0;
+  }
+  section{
+  /*   min-width:400px;  */
+    max-width:700px;
+    margin-left:auto;
+    margin-right:auto;
+  /*   margin-bottom:1em; */
+    padding:0;
+  }
+  input,select{
+  /*   padding:1em; */
+    text-align: left;
+    font: Light 10px Helvetica;
+    letter-spacing: -0.4px;
+    color: #FFFFFF;
+    background-color:transparent;
+    border:none;
+    /*change*/
+    width:100%;
+    border-bottom:1px solid #C1F7D5;
+  }
+  #button{
+    background: #C1F7D5 0% 0% no-repeat padding-box;
+    border-radius: 30px;
+    opacity: 1;
+    text-align: center;
+    font: Bold 1em Helvetica;
+    color: #354463;
+  }
+  a{
+    text-decoration: underline;
+    font: Light 10px Helvetica;
+    letter-spacing: -0.16px;
+    color: #C1F7D5;
+  }
+  header h2{
+    display:flex;
+    justify-content:center;
+  }
+  
+  .wrapper{
+    display:grid;
+    grid-template-columns:2fr;
+    /* grid-template-row:1fr 3fr; */
+    grid-gap:1em;
+  /*   grid-flow:dense; */
+    margin:0 auto;
+  }
+  .header{
+    grid-column:1/2;
+    grid-row:1/2;
+    font-size:20px;
+    text-align: center;
+    color: #FFFFFF;
+    font-family:Helvetica;
+    margin:0 auto;
+  }
+  
+  .form .head{
+    text-align: left;
+    font: Bold 15px/22px Helvetica;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+  }
+  .form label{
+    text-align: left;
+    font: Regular 10px/15px Helvetica;
+    letter-spacing: 0.56px;
+    color: #FFFFFF;
+  }
+  .form{
+    background: #354463 0% 0% no-repeat padding-box;
+    opacity: 1;
+    grid-column:1/2;
+    grid-row:2/3;
+    padding:1em;
+    display:grid;
+    grid-template-columns:1fr;
+    grid-gap:2px;
+  }
+  .top-form{
+    grid-column:1/2;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr 1fr;
+    grid-gap:8px;
+  }
+  .top-form .fname{
+    grid-column:1/2;
+    display:grid;
+  }
+  .top-form .lname{
+    grid-column:2/3;
+    display:grid;
+  }
+  .top-form .street-address{
+    grid-column:1/3;
+    display:grid;
+  }
+  .top-form .city{
+    grid-column:1/2;
+    display:grid;
+  }
+  .top-form .state{
+    grid-column:2/3;
+    display:grid;
+    grid-gap:2px;
+    grid-template-columns:1fr 1fr;
+  }
+  
+  .top-form #state{
+    display:grid;
+  }
+  .top-form .email{
+    grid-column:1/3;
+    display:grid;
+  }
+  .middle-form{
+    grid-column:1/2;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:1fr 1fr;
+    grid-gap:8px;
+  }
+  .middle-form .card{
+    grid-column:1/3;
+    display:grid;
+  }
+  .middle-form .card-expire{
+    grid-column:1/2;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+  }
+  .middle-form .card-year{
+    display:grid;
+    grid-gap:1em;
+  }
+  .middle-form .card-month{
+    display:grid;
+    grid-gap:5px;
+  }
+  .middle-form .card-security{
+    grid-column:2/3;
+    display:grid;
+  } 
+  .bottom-form{
+    grid-column:1/2;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+  }
+  footer section{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr;
+    grid-gap:5px;
+  }
+  footer #footer-head{
+    grid-column:1/2;
+    grid-row:1/2;
+    text-align: left;
+    font: Bold 18px/20px Helvetica;
+    letter-spacing: 0px;
+    color: #354463;
+    opacity: 1;
+  }
+  footer #footer-mid{
+    grid-column:2/3;
+    grid-row:1/4;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-gap:5px;
+  }
+  footer #footer-mid h3{
+    text-align: left;
+    font: Regular 12px/13px Helvetica;
+    letter-spacing: 0.56px;
+    color: #354463;
+  }
+  footer #footer-mid p{
+    text-align: left;
+    font: Light 13px/12px Helvetica;
+    letter-spacing: -0.14px;
+    color: #354463;
+  }
+  footer #footer-end{
+    grid-column:1/2;
+    grid-row:2/3;
+    justify-self:start;
+    align-self:center;
+    text-align:center;
+    font: Regular 10px Flood Std;
+    letter-spacing: 0px;
+    color: #354463;
+  }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 1024px){
+  section{
+    width:80%;
+    margin:auto;
+    padding:1em;
+    margin-bottom:1em;
+  }
+  input,select{
+    padding:1em;
+    text-align: left;
+    font: Light 20px/32px Helvetica;
+    letter-spacing: -0.4px;
+    color: #FFFFFF;
+    background-color:transparent;
+    border:none;
+    border-bottom:1px solid #C1F7D5;
+  }
+  #button{
+    background: #C1F7D5 0% 0% no-repeat padding-box;
+    border-radius: 100px;
+    opacity: 1;
+    text-align: center;
+    font: Bold 1em Helvetica;
+    color: #354463;
+  }
+  a{
+    text-decoration: underline;
+    font: Light 15px/56px Helvetica;
+    letter-spacing: -0.16px;
+    color: #C1F7D5;
+  }
+  header h2{
+    display:flex;
+    justify-content:center;
+  }
+  
+  main{
+    width:100%;
+    background: transparent url('../img/annie-spratt-427340-unsplash-(1).png') no-repeat center;
+    background-size: cover;
+  }
+  .wrapper{
+    display:grid;
+    grid-template-columns:2fr;
+    /* grid-template-rows:1fr 3fr; */
+    grid-gap:2em;
+  }
+  .header{
+    grid-column:1/2;
+    grid-row:1/2;
+    text-align: center;
+    font-size:40px;
+    color: #FFFFFF;
+    font-family:Helvetica;
+  }
+  
+  .form .head{
+    text-align: left;
+    font: Bold 28px/36px Helvetica;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+  }
+  .form label{
+    text-align: left;
+    font: Regular 14px/17px Helvetica;
+    letter-spacing: 0.56px;
+    color: #FFFFFF;
+  }
+  .form{
+    background: #354463 0% 0% no-repeat padding-box;
+    opacity: 1;
+    grid-column:1/2;
+    grid-row:2/3;
+    padding:1em;
+    display:grid;
+    grid-template-columns:1fr;
+    grid-gap:10px;
+  }
+  .top-form{
+    grid-column:1/2;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr 1fr;
+    grid-gap:10px;
+  }
+  .top-form .fname{
+    grid-column:1/2;
+    display:grid;
+    grid-gap:2px;
+  }
+  .top-form .lname{
+    grid-column:2/3;
+    display:grid;
+    grid-gap:2px;
+  }
+  .top-form .street-address{
+    grid-column:1/3;
+    display:grid;
+  }
+  .top-form .city{
+    grid-column:1/2;
+    display:grid;
+  }
+  .top-form .state{
+    grid-column:2/3;
+    display:grid;
+    grid-gap:2px;
+    grid-template-columns:1fr 1fr;
+  }
+  
+  .top-form #state{
+    display:grid;
+  }
+  .top-form .email{
+    grid-column:1/3;
+    display:grid;
+  }
+  .middle-form{
+    grid-column:1/2;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:1fr 1fr;
+    grid-gap:10px;
+  }
+  .middle-form .card{
+    grid-column:1/3;
+    display:grid;
+  }
+  .middle-form .card-expire{
+    grid-column:1/2;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+  }
+  .middle-form .card-year{
+    display:grid;
+    grid-gap:1em;
+  }
+  .middle-form .card-month{
+    display:grid;
+    grid-gap:5px;
+  }
+  .middle-form .card-security{
+    grid-column:2/3;
+    display:grid;
+  } 
+  .bottom-form{
+    grid-column:1/2;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+  }
+  footer section{
+    display:grid;
+    grid-template-columns:1fr 4fr 1fr;
+    grid-template-rows:1fr 1fr;
+    grid-gap:5px;
+  }
+  footer #footer-head{
+    grid-column:1/2;
+    grid-row:1/3;
+    place-self:center;
+    text-align: left;
+    font: Bold 22px/28px Helvetica;
+    letter-spacing: 0px;
+    color: #354463;
+    opacity: 1;
+  }
+  footer #footer-mid{
+    grid-column:2/4;
+    grid-row:1/3;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-gap:10px;
+  }
+  footer #footer-mid h3{
+    text-align: left;
+    font: Regular 14px/17px Helvetica;
+    letter-spacing: 0.56px;
+    color: #354463;
+  }
+  footer #footer-mid p{
+    text-align: left;
+    font: Light 14px/20px Helvetica;
+    letter-spacing: -0.14px;
+    color: #354463;
+  }
+  footer #footer-end{
+    grid-column:3/4;
+    grid-row:2/3;
+    text-align: right;
+    place-self:center;
+    font: Regular 28px Flood Std;
+    letter-spacing: 0px;
+    color: #354463;
+  }
+  }
+  
+ 
