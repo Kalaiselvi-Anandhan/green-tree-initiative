@@ -1,1268 +1,877 @@
 body{
-    font:15px/1.5 Helvetica sans-serif;
-    padding:0;
-    margin:0;
+  font:15px/1.5 Helvetica sans-serif;
+  padding:0;
+  margin:0;
 }
 .container{
-    width:80%;
-    padding-top:2%;
-    padding-bottom: 2%;
-    margin:auto;
-    overflow:hidden;
+  width:80%;
+  padding-top:2%;
+  padding-bottom: 2%;
+  margin:auto;
+  overflow:hidden;
 }
 
 button{
-    background: #C1F7D5 0% 0% no-repeat padding-box;
-    border-radius: 100px;
-    opacity: 1;
-    text-align: center;
-    padding:8px;
-    font: Bold 18px/22px Helvetica;
-    letter-spacing: 0px;
-    color: #354463;
+  background: #C1F7D5 0% 0% no-repeat padding-box;
+  border-radius: 100px;
+  opacity: 1;
+  text-align: center;
+  padding:8px;
+  font: Bold 18px/22px Helvetica;
+  letter-spacing: 0px;
+  color: #354463;
 }
 
 legend{
-    background: #354463 0% 0% no-repeat padding-box;
-    text-align: left;
-    padding:5px;
-    font: Regular 14px/17px Helvetica;
-    letter-spacing: 0.56px;
-    color: #FFFFFF;
+  background: #354463 0% 0% no-repeat padding-box;
+  text-align: left;
+  padding:5px;
+  font: Regular 14px/17px Helvetica;
+  letter-spacing: 0.56px;
+  color: #FFFFFF;
 }
 fieldset{
-    border: none;
+  border: none;
 }
 
 header{
-    height:auto;
-    width:100%;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    opacity: 1;
+  height:auto;
+  width:100%;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  opacity: 1;
 }
 
 header #nav-bar{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
+display:grid;
+align-items:center;
+grid-template-columns:1fr 3fr 1fr;
 }
 
 header #title{
-    text-align:left;
-    color: #354463;
+  width:50%;
+  text-align:left;
+  color: #354463;
 }
 
-header nav{
-    display:flex;
-    height:auto;
-    width:100%;
-    align-items: center;
-    justify-content: space-around;
+header #nav1{
+display:grid;
+grid-template-columns:1fr 1fr 1fr;
+align-self:center;
 }
 
 header a{
-    text-decoration: none;
-    text-align: left;
-    font: Light 16px/24px Helvetica;
-    letter-spacing: -0.16px;
-    color: #354463;
+  text-decoration: none;
+  text-align: left;
+  font: Light 16px/24px Helvetica;
+  letter-spacing: -0.16px;
+  color: #354463;
 }
 
 #the-issue{
-    width:100%;
-    min-height: 672px;
-    background: transparent url('../img/annie-spratt-135307-unsplash.png') no-repeat center;
-    background-size: cover;
-    opacity: 0.76; 
+  width:100%;
+  min-height: 672px;
+  background: transparent url('../img/annie-spratt-135307-unsplash.png') no-repeat center;
+  background-size: cover;
+  opacity: 0.76; 
 }
 #the-issue .container{
-  display:grid;
-  grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr;
- 
+display:grid;
+grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
+grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr;
+
 }
 
 #the-issue h3{
-    font: Bold 30px Helvetica;
-    letter-spacing: 0px;
-    color: #354463;
+  font: Bold 30px Helvetica;
+  letter-spacing: 0px;
+  color: #354463;
 }
 
 #the-issue #content{
-    padding:5px 10px;
-    text-align: left;
+  padding:5px 10px;
+  text-align: left;
 }
 
 #the-issue fieldset{
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    opacity: 1;
-  grid-area:2/1/6/3;
-  place-self:center;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  opacity: 1;
+grid-area:2/1/6/3;
+place-self:center;
 }
 
 #the-issue #img{
-    opacity: 1;
-    grid-area:3/5/3/6;
+  opacity: 1;
+  grid-area:3/5/3/6;
 }
 #the-issue #img h1{
-    font: Bold 30px Helvetica;
-    letter-spacing: 0px;
-    color: #FFFFFF;
+  font: Bold 30px Helvetica;
+  letter-spacing: 0px;
+  color: #FFFFFF;
 }
 
 #section2{
-    background: #C1F7D5 0% 0% no-repeat padding-box;
-    opacity: 1;
+  background: #C1F7D5 0% 0% no-repeat padding-box;
+  opacity: 1;
 }
 
 #section2 .container{
-  display:grid;
-  grid-template-columns:1fr 1fr 1fr 1fr;
-  grid-gap:3em;
+display:grid;
+grid-template-columns:1fr 1fr 1fr 1fr;
+grid-gap:3em;
 }
 #section2 p{
-    text-align: left;
-    font: Light 15px Helvetica;
-    letter-spacing: -0.16px;
-    color: #354463;
-    opacity: 1;
+  text-align: left;
+  font: Light 15px Helvetica;
+  letter-spacing: -0.16px;
+  color: #354463;
+  opacity: 1;
 }
 
 #whatwedo{
-    width:100%;
-    background: #354463 0% 0% no-repeat padding-box;
-    opacity: 1;
-    margin:0;
-  }
-  #whatwedo .container{
-    display:grid;
-    grid-template-rows:1fr 3fr;
-    grid-gap:2em;
-  }
-  #whatwedo .container  #header{
-    grid-row:1/2;
-  }
-  #whatwedo .container .wrapper{
-    grid-row:2/3;
-    display:grid;
-    grid-template-columns:1fr 1fr 1fr;
-    grid-gap:2em;
-  }
-  
-  #whatwedo .container .wrapper .box1,.box2,.box3{
-    background: #354463 0% 0% no-repeat padding-box;
-    opacity: 1;
-    display:grid;
-    grid-template-columns:2em 1fr 2em;
-    grid-template-rows:1fr 1fr 2fr;
-  }
-  #whatwedo .container .wrapper .snap{
-    max-height:250px;
-    width:100%;
-  }
-  #whatwedo .container .wrapper #snap1{
-    background: transparent url('../img/tree-planting.png') no-repeat center;
-    background-size: cover; 
-  }
-  #whatwedo .container .wrapper #snap2{
-    background: transparent url('../img/education-training@2x.png') no-repeat center;
-    background-size: cover;
-  }
-  #whatwedo .container .wrapper #snap3{
-    background: transparent url('../img/advocacy.png') no-repeat center;
-    background-size: cover;
-  }
-  #whatwedo .container .wrapper #snap1,#snap2,#snap3{
-    grid-area:1/2/4/4;
-  }
-  #whatwedo .container .wrapper #content1,#content2,#content3{
-    grid-area:2/1/4/3;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    opacity: 1;
-    padding-top:40%;
-    padding-left:5%;
-    padding-right:5%;
-  }
-  #whatwedo .container .wrapper .content h3{
-      text-align: left;
-    font: Bold 25px/28px Helvetica;
-    letter-spacing: 0px;
-    color: #354463;
-    opacity: 1;
-  }
-  #whatwedo .container .wrapper .content p{
+  width:100%;
+  background: #354463 0% 0% no-repeat padding-box;
+  opacity: 1;
+  margin:0;
+}
+#whatwedo .container{
+  display:grid;
+  grid-template-rows:1fr 3fr;
+  grid-gap:2em;
+}
+#whatwedo .container  #header{
+  grid-row:1/2;
+}
+#whatwedo .container .wrapper{
+  grid-row:2/3;
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  grid-gap:2em;
+}
+
+#whatwedo .container .wrapper .box1,.box2,.box3{
+  background: #354463 0% 0% no-repeat padding-box;
+  opacity: 1;
+  display:grid;
+  grid-template-columns:2em 1fr 2em;
+  grid-template-rows:1fr 1fr 2fr;
+}
+#whatwedo .container .wrapper .snap{
+  max-height:250px;
+  width:100%;
+}
+#whatwedo .container .wrapper #snap1{
+  background: transparent url('../img/tree-planting.png') no-repeat center;
+  background-size: cover; 
+}
+#whatwedo .container .wrapper #snap2{
+  background: transparent url('../img/education-training@2x.png') no-repeat center;
+  background-size: cover;
+}
+#whatwedo .container .wrapper #snap3{
+  background: transparent url('../img/advocacy.png') no-repeat center;
+  background-size: cover;
+}
+#whatwedo .container .wrapper #snap1,#snap2,#snap3{
+  grid-area:1/2/4/4;
+}
+#whatwedo .container .wrapper #content1,#content2,#content3{
+  grid-area:2/1/4/3;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  opacity: 1;
+  padding-top:40%;
+  padding-left:5%;
+  padding-right:5%;
+}
+#whatwedo .container .wrapper .content h3{
     text-align: left;
-    font: Light 16px/24px Helvetica;
-    letter-spacing: -0.16px;
-    color: #354463;
-    opacity: 1;
-  }
-  #whatwedo .container .wrapper .content button{
-    background: #C1F7D5 0% 0% no-repeat padding-box;
+  font: Bold 25px/28px Helvetica;
+  letter-spacing: 0px;
+  color: #354463;
+  opacity: 1;
+}
+#whatwedo .container .wrapper .content p{
+  text-align: left;
+  font: Light 16px/24px Helvetica;
+  letter-spacing: -0.16px;
+  color: #354463;
+  opacity: 1;
+}
+#whatwedo .container .wrapper .content button{
+  background: #C1F7D5 0% 0% no-repeat padding-box;
   border-radius: 100px;
   opacity: 1;
-  }
-  #whatwedo .container #header h2{
-    text-align: left;
-    font: Bold 28px/30px Helvetica;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    opacity: 1;
-  }
+  margin-bottom:1em;
+}
+#whatwedo .container #header h2{
+  text-align: left;
+  font: Bold 28px/30px Helvetica;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+}
 
 #take-action{
-    width:100%;
-    min-height: 672px;
-    background: transparent url('../img/Did you know background.png') no-repeat center;
-    opacity: 1;
-    background-size: cover;
+  width:100%;
+  min-height: 672px;
+  background: transparent url('../img/Did you know background.png') no-repeat center;
+  opacity: 1;
+  background-size: cover;
 }
 #take-action .container{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-  }
-  #take-action .container #header{
-    grid-column:1/2;
-  }
-  #take-action .container .wrapper{
-    grid-column:2/3;
-    grid-template-rows:1fr 1fr 1fr;
-    grid-gap:3em;
-  }
-  #take-action .container .wrapper .box{
-    background-color:white;
-    letter-spacing: 0px;
-    color: #354463;
-  }
-  #take-action .container .wrapper .box h3{
-    text-align: left;
-    font: Bold 33px/35px Helvetica;
-    letter-spacing: 0px;
-    color: #354463;
-    opacity: 1;
-  }
+  display:grid;
+  grid-template-columns:1fr 1fr;
+}
+#take-action .container #header{
+  grid-column:1/2;
+}
+#take-action .container .wrapper{
+  grid-column:2/3;
+  grid-template-rows:1fr 1fr 1fr;
+  grid-gap:3em;
+}
+#take-action .container .wrapper .box{
+  background-color:white;
+  letter-spacing: 0px;
+  color: #354463;
+  padding:1em;
+  margin-bottom:1rem;
+}
+#take-action .container .wrapper .box h3{
+  text-align: left;
+  font: Bold 33px/35px Helvetica;
+  letter-spacing: 0px;
+  color: #354463;
+  opacity: 1;
+}
+#take-action .container #header h2{
+  text-align: left; 
+  font: Regular 44px/46px Flood Std;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+}
 
 #stories{
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    opacity: 1;
-    height: 100%;
-    width: 100%;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  opacity: 1;
+  height: 100%;
+  width: 100%;
 }
 
 #stories .container{
-  padding-top:5%;
-  padding-bottom: 5%;
+padding-top:5%;
+padding-bottom: 5%;
 }
 #stories .container #content{
-    background: #354463 0% 0% no-repeat padding-box;
-    opacity: 1;
-    height:10%;
-    width: 50%;
-    padding:3%;
-    margin-top:8%;
+  background: #354463 0% 0% no-repeat padding-box;
+  opacity: 1;
+  height:10%;
+  width: 50%;
+  padding:3%;
+  margin-top:8%;
 }
 
 #stories .container h3{
-    text-align: left;
-    font: Bold 18px Helvetica;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    opacity: 1;
+  text-align: left;
+  font: Bold 18px Helvetica;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
 }
 #stories .container p{
-    text-align: left;
-    font: Regular 14px/17px Helvetica;
-    letter-spacing: 0.56px;
-    color: #FFFFFF;
+  text-align: left;
+  font: Regular 14px/17px Helvetica;
+  letter-spacing: 0.56px;
+  color: #FFFFFF;
 }
 
 #stories fieldset{
-    float:right;
-    width:60%;
-    min-height: 300px;
-    background: transparent url('../img/lady-baby.png') no-repeat center;
-    background-size: cover;
-    padding-top:10%;
+  float:right;
+  width:60%;
+  min-height: 300px;
+  background: transparent url('../img/lady-baby.png') no-repeat center;
+  background-size: cover;
+  padding-top:10%;
 }
 #stories .container button{
-    margin-top: 4%;
-    margin-left: 8%;
+  margin-top: 4%;
+  margin-left: 8%;
 }
 
 #takeaction{
-    background: #354463 0% 0% no-repeat padding-box;
-    opacity:1;
+  background: #354463 0% 0% no-repeat padding-box;
+  opacity:1;
 }
 
 #takeaction h2{
-    font: Regular 72px Flood Std;
-    letter-spacing: 0px;
-    color: #FFFFFF;
+  font: Regular 72px Flood Std;
+  letter-spacing: 0px;
+  color: #FFFFFF;
 }
 
 #takeaction .container #img1,#img2{
-    min-height:400px;
-    width:100%;
+  min-height:400px;
+  width:100%;
 }
 #takeaction .container{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  grid-template-rows:200px 1fr 1fr;
-  grid-gap:3em;
+display:grid;
+grid-template-columns:1fr 1fr;
+grid-template-rows:200px 1fr 1fr;
+grid-gap:3em;
 }
 #takeaction .container h2{
-  grid-area:1/1/2/3;
-  align-self:center;
+grid-area:1/1/2/3;
+align-self:center;
 }
 #takeaction .container #inner-box1{
-  grid-area:2/2/3/3;
-  padding:5%;
+grid-area:2/2/3/3;
+padding:5%;
 }
 #takeaction .container #inner-box2{
-  grid-area:3/1/4/2;
-  padding:5%;
+grid-area:3/1/4/2;
+padding:5%;
 }
 #takeaction .container #img1{
-  grid-area:2/1/3/2;
+grid-area:2/1/3/2;
 }
 #takeaction .container #img2{
-  grid-area:3/2/4/3;
+grid-area:3/2/4/3;
 }
 #takeaction #img1{
-    background: transparent url('../img/tree-planting.png') no-repeat center;
-    background-size: cover;
-    opacity: 1;
+  background: transparent url('../img/tree-planting.png') no-repeat center;
+  background-size: cover;
+  opacity: 1;
 }
 #takeaction #img2{
-    background: transparent url('../img/meeting.png')  no-repeat center;
-    background-size:cover;
+  background: transparent url('../img/meeting.png')  no-repeat center;
+  background-size:cover;
 }
 
 #takeaction .container .box h3{
-    text-align: left;
-    font: Bold 30px/38px Helvetica;
-    letter-spacing: 0px;
-    color: #FFFFFF;
+  text-align: left;
+  font: Bold 30px/38px Helvetica;
+  letter-spacing: 0px;
+  color: #FFFFFF;
 }
 #takeaction .container .box p{
-    text-align: left;
-    font: Light 20px/32px Helvetica;
-    letter-spacing: -0.4px;
-    color: #FFFFFF;
-    opacity: 1;
+  text-align: left;
+  font: Light 20px/32px Helvetica;
+  letter-spacing: -0.4px;
+  color: #FFFFFF;
+  opacity: 1;
 }
 
 #subscribe{
-    background: #C1F7D5 0% 0% no-repeat padding-box;
-    opacity: 1;
+  background: #C1F7D5 0% 0% no-repeat padding-box;
+  opacity: 1;
 }
 #subscribe .container,footer .container{
-  display:grid;
-  grid-template-columns:2fr 1fr;
+display:grid;
+grid-template-columns:2fr 1fr 1fr;
+grid-gap:2em;
+grid-template-rows:3em;
+align-items:center;
 }
 
 #subscribe .container input{
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    border-radius: 100px;
-    padding:1%;
-    font-size: 17px;
-    opacity: 1;
-  
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border-radius: 100px;
+  padding:1%;
+  font-size: 17px;
+  opacity: 1;
+
 }
 #subscribe .container h3{
-    font: Bold 18px Helvetica;
-    letter-spacing: 0px;
-    color: #354463;
+  font: Bold 18px Helvetica;
+  letter-spacing: 0px;
+  color: #354463;
 }
 
 footer{
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    opacity: 1;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  opacity: 1;
 }
 footer .container{
-  display:grid;
-  grid-template-columns:1fr 1fr 1fr 1fr 1fr;
-  grid-gap:1em;
+display:grid;
+grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+grid-gap:1em;
 }
 
 footer .container h3{
-    font: Regular 14px/17px Helvetica;
-    letter-spacing: 0.56px;
-    color: #354463;
+  font: Regular 14px/17px Helvetica;
+  letter-spacing: 0.56px;
+  color: #354463;
 }
 footer .container h2{
-    font: Regular 28px/25px Helvetica;
-    letter-spacing: 0.56px;
-    color: #354463;
-    text-align:right;
+  font: Regular 28px/25px Helvetica;
+  letter-spacing: 0.56px;
+  color: #354463;
+  text-align:right;
 }
 footer .container p{
-    text-align: left;
-    font: Light 14px/20px Helvetica;
-    letter-spacing: -0.14px;
-    color: #354463;
+  text-align: left;
+  font: Light 14px/20px Helvetica;
+  letter-spacing: -0.14px;
+  color: #354463;
 }
 
 
 @media screen and (min-width: 768px) and (max-width: 1024px){
-  body{
-    font:15px/1.5 Helvetica sans-serif;
-    padding:0;
-    margin:0;
-}
-.container{
-    width:80%;
-    padding-top:2%;
-    padding-bottom: 2%;
-    margin:auto;
-    overflow:hidden;
-}
 
-button{
-    background: #C1F7D5 0% 0% no-repeat padding-box;
-    border-radius: 100px;
-    opacity: 1;
-    text-align: center;
-    padding:8px;
-    font: Bold 18px/22px Helvetica;
-    letter-spacing: 0px;
-    color: #354463;
-}
-
-legend{
-    background: #354463 0% 0% no-repeat padding-box;
-    text-align: left;
-    padding:5px;
-    font: Regular 14px/17px Helvetica;
-    letter-spacing: 0.56px;
-    color: #FFFFFF;
-}
-fieldset{
-    border: none;
-}
-
-header{
-    height:auto;
-    width:100%;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    opacity: 1;
-}
 
 header #nav-bar{
- display:grid;
-  grid-template-columns:1fr 1fr;
- grid-template-rows:1fr 1fr;
-  grid-gap:10px;
+display:grid;
+grid-template-columns:1fr 1fr 1fr;
+grid-template-rows:1fr 1fr;
 }
 
 header #title{
-    text-align:left;
-    color: #354463;
-    grid-area:1/1/2/2;
+  text-align:left;
+  color: #354463;
+  grid-area:1/1/2/2;
 }
 
-header nav{
-  grid-area:2/1/3/3;
-  display:grid;
-  grid-template-columns:1fr 1fr 1fr 1fr;
-  justify-content:space-between;
+header #nav1{ 
+grid-area:2/1/3/3;
+}
+header #nav2{
+grid-area:1/3/3/4;
 }
 
-header a{
-    text-decoration: none;
-    text-align: left;
-    font: Light 16px/24px Helvetica;
-    letter-spacing: -0.16px;
-    color: #354463;
-}
-
-#the-issue{
-    width:100%;
-    min-height: 672px;
-    background: transparent url('../img/annie-spratt-135307-unsplash.png') no-repeat center;
-    background-size: cover;
-    opacity: 0.76; 
-}
-#the-issue .container{
-  display:grid;
-  grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr;
- 
-}
-
-#the-issue h3{
-    font: Bold 30px Helvetica;
-    letter-spacing: 0px;
-    color: #354463;
-}
-
-#the-issue #content{
-    padding:5px 10px;
-    text-align: left;
-}
 
 #the-issue fieldset{
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    opacity: 1;
-  grid-area:4/1/7/6;/*change*/
-  place-self:center;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  opacity: 1;
+grid-area:4/1/7/6;/*change*/
+place-self:center;
 }
 
 #the-issue #img{
-    opacity: 1;
-    grid-area:2/1/3/2;/*change*/
+  opacity: 1;
+  grid-area:2/1/3/2;/*change*/
 }
 
-#section2{
-    background: #C1F7D5 0% 0% no-repeat padding-box;
-    opacity: 1;
-}
 
 #section2 .container{
-  display:grid;
-  grid-template-columns:1fr 1fr;/*change*/
-  grid-gap:3em;
-}
-#section2 p{
-    text-align: left;
-    font: Light 15px Helvetica;
-    letter-spacing: -0.16px;
-    color: #354463;
-    opacity: 1;
+display:grid;
+grid-template-columns:1fr 1fr;/*change*/
+grid-gap:3em;
 }
 
-#whatwedo{
-    width:100%;
-    background: #354463 0% 0% no-repeat padding-box;
-    opacity: 1;
-    margin:0;
-  }
- 
- #whatwedo .container{
-  display:grid;
-   grid-template-columns:1fr 1fr;
-  grid-template-rows:200px 2fr;
-  grid-gap:2em;
+
+#whatwedo .container{
+display:grid;
+ grid-template-columns:1fr 1fr;
+grid-template-rows:200px 2fr;
+grid-gap:2em;
 }
 #whatwedo .container  #header{
-  grid-area:1/1/2/3;
+grid-area:1/1/2/3;
 }
 #whatwedo .container .wrapper{
-  grid-area:2/1/3/3;
-  display:grid;
-  grid-template-columns:1fr 1fr 1fr;
-  grid-template-rows:1fr 1fr 1fr;
-  grid-gap:2em;
+grid-area:2/1/3/3;
+display:grid;
+grid-template-columns:1fr 1fr 1fr;
+grid-template-rows:1fr 1fr 1fr;
+grid-gap:3em;
 }
-  #whatwedo .container .wrapper .box1{
-    grid-area:1/1/2/4;
-  }
-  #whatwedo .container .wrapper .box2{
-    grid-area:2/1/3/4;
-  }
-  #whatwedo .container .wrapper .box3{
-    grid-area:3/1/4/4;
-  }
+#whatwedo .container .wrapper .box1{
+  grid-area:1/1/2/4;
+}
+#whatwedo .container .wrapper .box2{
+  grid-area:2/1/3/4;
+}
+#whatwedo .container .wrapper .box3{
+  grid-area:3/1/4/4;
+}
 #whatwedo .container .wrapper .box1,.box2,.box3{
-  background: #FFFFFF 0% 0% no-repeat padding-box;
-  opacity: 1;
-  display:grid;
-  grid-template-columns:3em 1fr 1fr;
-  grid-template-rows:3em 2fr 1fr;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+opacity: 1;
+display:grid;
+grid-template-columns:3em 1fr 1fr;
+grid-template-rows:4em 2fr 1fr;
 }
 #whatwedo .container .wrapper .snap{
-  max-height:300px;
-  width:100%;
+max-height:300px;
+width:100%;
 }
 #whatwedo .container .wrapper #snap1,#snap2,#snap3{
-  grid-area:1/2/3/3;
+grid-area:1/2/3/3;
+margin-top:-10%;
 }
 #whatwedo .container .wrapper #content1,#content2,#content3{
-  grid-area:1/3/4/4;
-  background: #FFFFFF 0% 0% no-repeat padding-box;
-  opacity: 1;
-  padding-left:5%;
-  padding-bottom:30%;
-  padding-right:5%;
-}
-
-  #whatwedo .container .wrapper #snap1{
-    background: transparent url('../img/tree-planting.png') no-repeat center;
-    background-size: cover;   
-  }
-  #whatwedo .container .wrapper #snap2{
-    background: transparent url('../img/education-training@2x.png') no-repeat center;
-    background-size: cover;
-  }
-  #whatwedo .container .wrapper #snap3{
-    background: transparent url('../img/advocacy.png') no-repeat center;
-    background-size: cover;
-  }
-  #whatwedo .container .wrapper .content h3{
-      text-align: left;
-    font: Bold 25px/28px Helvetica;
-    letter-spacing: 0px;
-    color: #354463;
-    opacity: 1;
-  }
-  #whatwedo .container .wrapper .content p{
-    text-align: left;
-    font: Light 16px/24px Helvetica;
-    letter-spacing: -0.16px;
-    color: #354463;
-    opacity: 1;
-  }
-  #whatwedo .container .wrapper .content button{
-    background: #C1F7D5 0% 0% no-repeat padding-box;
-  border-radius: 100px;
-  opacity: 1;
-  }
-  #whatwedo .container #header h2{
-    text-align: left;
-    font: Bold 28px/30px Helvetica;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    opacity: 1;
-  }
-
-#take-action{
-    width:100%;
-    min-height: 672px;
-    background: transparent url('../img/Did you know background.png') no-repeat center;
-    opacity: 1;
-    background-size: cover;
-}
-#take-action .container{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-  }
-  #take-action .container #header{
-    grid-column:1/2;
-  }
-  #take-action .container .wrapper{
-    grid-column:2/3;
-    grid-template-rows:1fr 1fr 1fr;
-    grid-gap:3em;
-  }
-  #take-action .container .wrapper .box{
-    background-color:white;
-    letter-spacing: 0px;
-    color: #354463;
-  }
-  #take-action .container .wrapper .box h3{
-    text-align: left;
-    font: Bold 33px/35px Helvetica;
-    letter-spacing: 0px;
-    color: #354463;
-    opacity: 1;
-  }
-
-#stories{
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    opacity: 1;
-    width: 100%;
+grid-area:1/3/4/4;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+opacity: 1;
+padding-top:0;
+padding-left:5%;
+padding-bottom:30%;
+padding-right:5%;
 }
 
 #stories .container{
-  padding-top:5%;
-  padding-bottom: 5%;
-  display:grid;
-  grid-template-columns:1fr 1fr 2fr 1fr;
-  grid-template-rows:1fr 1fr 1fr 50px;
+padding-top:5%;
+padding-bottom: 5%;
+display:grid;
+grid-template-columns:1fr 1fr 2fr 1fr;
+grid-template-rows:1fr 1fr 1fr 50px;
 }
 #stories .container #content{
-  opacity: 1;
-  width:100%;
-  min-height:300px;
-  grid-area:2/2/4/5;
-  padding-top:3%;
-  background-color: #354463;
+opacity: 1;
+width:100%;
+min-height:300px;
+grid-area:2/2/4/5;
+padding-top:3%;
+background-color: #354463;
 }
-
-#stories .container h3{
-    text-align: left;
-    font: Bold 20px Helvetica;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    opacity: 1;
-}
-#stories .container p{
-    text-align: left;
-    font: Regular 14px/17px Helvetica;
-    letter-spacing: 0.56px;
-    color: #FFFFFF;
-}
-
 #stories fieldset{
-    grid-area:1/1/3/4;
-    max-height: 300px;
-    width:100%;
-    background: transparent url('../img/lady-baby.png') no-repeat center;
-    background-size: cover;
-    padding-top:10%;
+  grid-area:1/1/3/4;
+  max-height: 300px;
+  width:100%;
+  background: transparent url('../img/lady-baby.png') no-repeat center;
+  background-size: cover;
+  padding-top:10%;
 }
 #stories .container button{
-  grid-area:4/2/5/3;
-  font-size:14px;
+grid-area:4/2/5/3;
+font-size:14px;
 }
 
-#takeaction{
-    background: #354463 0% 0% no-repeat padding-box;
-    opacity:1;
-}
-
-#takeaction h2{
-    font: Regular 72px Flood Std;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-}
-
-#takeaction .container #img1,#img2{
-    max-height:400px;
-    width:100%;
-}
-#takeaction #img1{
-    background: transparent url('../img/tree-planting.png') no-repeat center;
-    background-size: cover;
-    opacity: 1;
-}
-#takeaction #img2{
-    background: transparent url('../img/meeting.png')  no-repeat center;
-    background-size:cover;
-}
-#takeaction .container .box h3{
-    text-align: left;
-    font: Bold 30px/38px Helvetica;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-}
-#takeaction .container .box p{
-    text-align: left;
-    font: Light 20px/32px Helvetica;
-    letter-spacing: -0.4px;
-    color: #FFFFFF;
-    opacity: 1;
-}
-#takeaction .container{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  grid-template-rows:200px 1fr 1fr;
-  grid-gap:3em;
-}
-#takeaction .container h2{
-  grid-area:1/1/2/3;
-  align-self:center;
-}
-#takeaction .container #inner-box1{
-  grid-area:2/2/3/3;
-}
-#takeaction .container #inner-box2{
-  grid-area:3/1/4/2;
-}
-#takeaction .container #img1{
-  grid-area:2/1/3/2;
-}
-#takeaction .container #img2{
-  grid-area:3/2/4/3;
-}
-
-#subscribe{
-    background: #C1F7D5 0% 0% no-repeat padding-box;
-    opacity: 1;
-}
 #subscribe .container,footer .container{
-  display:grid;
-  grid-template-rows:1fr;/*change*/
+display:grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows:1fr 3em;/*change*/
+grid-gap:2em;
 }
 
 #subscribe .container input{
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    border-radius: 100px;
-    padding:1%;
-    font-size: 17px;
-    opacity: 1;
-  
+  grid-area:2/1/3/2;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border-radius: 100px;
+  padding:1%;
+  font-size: 17px;
+  opacity: 1;
+
+}
+#subscribe .container button{
+grid-area:2/2/3/3;
 }
 #subscribe .container h3{
-    font: Bold 18px Helvetica;
-    letter-spacing: 0px;
-    color: #354463;
+  grid-area:1/1/2/3;
+  font: Bold 18px Helvetica;
+  letter-spacing: 0px;
+  color: #354463;
 }
 
-footer{
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    opacity: 1;
-}
 footer .container{
-  display:grid;
-  grid-template-columns:1fr 1fr 1fr;
-  grid-template-rows:1fr 1fr;
-  grid-gap:1em;
+display:grid;
+grid-template-columns:1fr 1fr 1fr;
+grid-template-rows:1fr 1fr;
+grid-gap:1em;
 }
 footer .container .title{
-  grid-area:1/1/2/2;
+grid-area:1/1/2/2;
 }
 footer .container .contact-info{
-  grid-area:1/2/2/3;
+grid-area:1/2/2/3;
 }
 footer .container .link{
-  grid-area:1/3/2/4;
+grid-area:1/3/2/4;
 }
 footer .container .social-network{
-  grid-area:2/2/3/3;
+grid-area:2/2/3/3;
 }
 footer .container .hashtag{
-  grid-area:2/3/3/4;
-}
-
-footer .container h3{
-    font: Regular 14px/17px Helvetica;
-    letter-spacing: 0.56px;
-    color: #354463;
-}
-footer .container h2{
-    font: Regular 28px/25px Helvetica;
-    letter-spacing: 0.56px;
-    color: #354463;
-    text-align:right;
-}
-footer .container p{
-    text-align: left;
-    font: Light 14px/20px Helvetica;
-    letter-spacing: -0.14px;
-    color: #354463;
+grid-area:2/3/3/4;
 }
 }
 
- @media screen and (min-width: 320px) and (max-width: 767px){ 
+@media screen and (min-width: 320px) and (max-width: 767px){ 
 
-    .container{
-        width:80%;
-        padding-top:2%;
-        padding-bottom: 2%;
-        margin:auto;
-    }
-    
-    button{
-        background: #C1F7D5 0% 0% no-repeat padding-box;
-        border-radius: 100px;
-        opacity: 1;
-        text-align: center;
-        padding:8px;
-        font: Bold 16px/22px Helvetica;
-        letter-spacing: 0px;
-        color: #354463;
-    }
-    
-    legend{
-        background: #354463 0% 0% no-repeat padding-box;
-        text-align: left;
-        padding:5px;
-        font: Regular 14px/17px Helvetica;
-        letter-spacing: 0.56px;
-        color: #FFFFFF;
-    }
-    fieldset{
-        border: none;
-    }
-    
-    header{
-        height:auto;
-        width:100%;
-        background: #FFFFFF 0% 0% no-repeat padding-box;
-        opacity: 1;
-    }
-    
-    header #nav-bar{
-     display:grid;
-      grid-template-columns:1fr 2fr;
-      grid-template-rows:1fr 1fr; 
-      grid-gap:10px;
-    }
-    header #nav-bar button{
+  button{
+      font: Bold 16px/22px Helvetica;
+  }
+  
+  header{
+      height:auto;
       width:100%;
-      font: Bold 15px Helvetica;
-    }
-    
-    header #title{
-        text-align:left;
-        color: #354463;
-        grid-area:1/1/2/2;
-    }
-    
-    header nav{
-      grid-area:1/2/3/3;
-      display:grid;
-      grid-template-columns:1fr;
-      grid-gap:10px;
-      justify-content:space-between;
-      align-items:center;
-    }
-    
-    header a{
-        text-decoration: none;
-        text-align: left;
-        font: Light 16px/24px Helvetica;
-        letter-spacing: -0.16px;
-        color: #354463;
-    }
-    
-    #the-issue{
-        width:100%;
-        min-height: 672px;
-        background: transparent url('../img/annie-spratt-135307-unsplash.png') no-repeat center;
-        background-size: cover;
-        opacity: 0.76; 
-    }
-    #the-issue .container{
-      display:grid;
-      grid-template-rows:1fr 1fr;
-      grid-template-columns:1fr 1fr;
-      grid-gap:1em;
-    }
-    
-    #the-issue h3{
-        font: Bold 18px Helvetica;
-        letter-spacing: 0px;
-        color: #354463;
-    }
-    
-    #the-issue #content{
-        padding:5px 5px;
-        text-align: left;
-    }
-    
-    #the-issue fieldset{
-        background: #FFFFFF 0% 0% no-repeat padding-box;
-        opacity: 1;
-      grid-area:2/1/3/3/*change*/
-      /* place-self:center; */
-    }
-    
-    #the-issue #img{
-        grid-area:1/1/2/3;/*change*/
-      text-align: left;
-      font: Regular 25px/28px Flood Std;
+      background: #FFFFFF 0% 0% no-repeat padding-box;
+      opacity: 1;
+  }
+  
+  header #nav-bar{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:1fr 2em;
+    grid-gap:10px;
+  }
+  header #nav-bar button{
+    width:100%;
+    font: Bold 15px Helvetica;
+  }
+  
+  header #title{
+      text-align:left;
+      color: #354463;
+      grid-area:1/1/2/2;
+  }
+  
+  header #nav1{
+    grid-area:1/2/2/3;
+    display:grid;
+    grid-template-columns:1fr;
+    grid-gap:10px;
+    justify-content:space-between;
+    align-items:center;
+  }
+  header #nav2{
+    grid-area:2/1/3/3;
+  }
+
+  #the-issue .container{
+    display:grid;
+    grid-template-rows:1fr 1fr;
+    grid-template-columns:1fr 1fr;
+    grid-gap:1em;
+  }
+  
+  #the-issue h3{
+      font: Bold 18px Helvetica;
       letter-spacing: 0px;
-      color: #FFFFFF;
-      opacity: 1;
-    }
-    
-    #section2{
-        background: #C1F7D5 0% 0% no-repeat padding-box;
-        opacity: 1;
-    }
-    
-    #section2 .container{
-      display:grid;
-      grid-template-columns:1fr 1fr;/*change*/
-      grid-gap:3em;
-    }
-    #section2 p{
-        text-align: left;
-        font: Light 15px Helvetica;
-        letter-spacing: -0.16px;
-        color: #354463;
-        opacity: 1;
-    }
-    
-    #whatwedo{
-        width:100%;
-        background: #354463 0% 0% no-repeat padding-box;
-        opacity: 1;
-        margin:0;
-      }
-     
-     #whatwedo .container{
-      display:grid;
-      grid-template-rows:200px 2fr;
-      grid-template-columns:1fr 1fr
-    }
-    #whatwedo .container  #header{
-      grid-area:1/1/2/3;
-      place-self:center;
-    }
-    #whatwedo .container .wrapper{
+      color: #354463;
+  }
+  
+  #the-issue #content{
+      padding:5px 5px;
+      text-align: left;
+  }
+  
+  #the-issue fieldset{
+      background: #FFFFFF 0% 0% no-repeat padding-box;
       grid-area:2/1/3/3;
-      display:grid;
-      grid-template-rows:1fr 1fr 1fr;
-      grid-template-columns:1fr 1fr;
-      grid-gap:2em;
-    }
-      #whatwedo .container .wrapper .box1{
-        grid-area:1/1/2/3;
-      }
-      #whatwedo .container .wrapper .box2{
-        grid-area:2/1/3/3;
-      }
-      #whatwedo .container .wrapper .box3{
-        grid-area:3/1/4/3;
-      }
-    #whatwedo .container .wrapper .box1,.box2,.box3{
-      background: #FFFFFF 0% 0% no-repeat padding-box;
-      opacity: 1;
-      display:grid;
-      grid-template-columns:2em 1fr 2em;
-      grid-template-rows:1fr 1fr;
-    }
-    #whatwedo .container .wrapper .snap{
-      max-height:300px;
-      width:100%;
-    }
-    #whatwedo .container .wrapper #snap1,#snap2,#snap3{
-      grid-area:1/2/2/3;
-    }
-    #whatwedo .container .wrapper #content1,#content2,#content3{
-      grid-area:2/2/3/3;
-      background: #FFFFFF 0% 0% no-repeat padding-box;
-      opacity: 1;
-      padding-left:3%;
-      padding-right:3%;
-    }
-    
-      #whatwedo .container .wrapper #snap1{
-        background: transparent url('../img/tree-planting.png') no-repeat center;
-        background-size: cover;
-      }
-      #whatwedo .container .wrapper #snap2{
-        background: transparent url('../img/education-training@2x.png') no-repeat center;
-        background-size: cover;
-      }
-      #whatwedo .container .wrapper #snap3{
-        background: transparent url('../img/advocacy.png') no-repeat center;
-        background-size: cover;
-      }
-      #whatwedo .container .wrapper .content h3{
-          text-align: left;
-        font: Bold 18px/20px Helvetica;
-        letter-spacing: 0px;
-        color: #354463;
-        opacity: 1;
-      }
-      #whatwedo .container .wrapper .content p{
-        text-align: left;
-        font: Light 14px/18px Helvetica;
-        letter-spacing: -0.16px;
-        color: #354463;
-        opacity: 1;
-      }
-      #whatwedo .container .wrapper .content button{
-        background: #C1F7D5 0% 0% no-repeat padding-box;
-      border-radius: 100px;
-      opacity: 1;
-      }
-      #whatwedo .container #header h2{
-        text-align: left;
-        font: Bold 20px/23px Helvetica;
-        letter-spacing: 0px;
-        color: #FFFFFF;
-        opacity: 1;
-      }
-    
-    #take-action{
-        width:100%;
-        min-height: 672px;
-        background: transparent url('../img/Did you know background.png') no-repeat center;
-        opacity: 1;
-        background-size: cover;
-    }
-    #take-action .container{
-        display:grid;
-        grid-template-rows:200px 1fr;
-        grid-template-columns:1fr 1fr;
-      }
-      #take-action .container #header{
-        grid-area:1/1/2/3;
-      }
-      #take-action .container .wrapper{
-        grid-area:2/1/3/3;
-        grid-template-rows:1fr 1fr 1fr;
-        grid-gap:2em;
-      }
-      #take-action .container .wrapper .box{
-        background-color:white;
-        letter-spacing: 0px;
-        color: #354463;
-      }
-      #take-action .container .wrapper .box h3{
-        text-align: left;
-        font: Bold 18px/20px Helvetica;
-        letter-spacing: 0px;
-        color: #354463;
-        opacity: 1;
-      }
-    
-    #stories{
-        background: #FFFFFF 0% 0% no-repeat padding-box;
-        opacity: 1;
-        width: 100%;
-    }
-    
-    #stories .container{
-      padding-top:5%;
-      padding-bottom: 5%;
-      display:grid;
-      grid-template-rows:1fr 1fr 50px;
-    }
-    #stories .container #content{
-      opacity: 1;
-      width:100%;
-      min-height:300px;
-      grid-row:2/3;
-      background-color: #354463;
-    }
-    
-    #stories .container h3{
-        text-align: left;
-        font: Bold 20px Helvetica;
-        letter-spacing: 0px;
-        color: #FFFFFF;
-        opacity: 1;
-    }
-    #stories .container p{
-        text-align: left;
-        font: Regular 14px/17px Helvetica;
-        letter-spacing: 0.56px;
-        color: #FFFFFF;
-    }
-    
-    #stories fieldset{
-        grid-row:1/2;
-        min-height: 300px;
-        width:100%;
-        background: transparent url('../img/lady-baby.png') no-repeat center;
-        background-size: cover;
-    }
-    #stories .container button{
-      grid-row:3/4;
-      font-size:14px;
-      width:50%;
-      place-self:center;
-    }
-    
-    #takeaction{
-        background: #354463 0% 0% no-repeat padding-box;
-        opacity:1;
-    }
-    
-    #takeaction h2{
-        font: Regular 30px Flood Std;
-        letter-spacing: 0px;
-        color: #FFFFFF;
-    }
-    
-    #takeaction .container #img1,#img2{
-        max-height:400px;
-        width:100%;
-    }
-    #takeaction #img1{
-        background: transparent url('../img/tree-planting.png') no-repeat center;
-        background-size: cover;
-        opacity: 1;
-    }
-    #takeaction #img2{
-        background: transparent url('../img/meeting.png')  no-repeat center;
-        background-size:cover;
-    }
-    #takeaction .container .box h3{
-        text-align: left;
-        font: Bold 18px/20px Helvetica;
-        letter-spacing: 0px;
-        color: #FFFFFF;
-    }
-    #takeaction .container .box p{
-        text-align: left;
-        font: Light 14px/20px Helvetica;
-        letter-spacing: -0.4px;
-        color: #FFFFFF;
-        opacity: 1;
-    }
-    #takeaction .container{
-      display:grid;
-      grid-template-rows:200px 1fr 1fr 1fr 1fr;
-      grid-template-columns:1fr 1fr;
-      grid-gap:1em;
-    }
-    #takeaction .container h2{
+  }
+  
+  #the-issue #img{
+    grid-area:1/1/2/3;/*change*/
+    text-align: left;
+    font: Regular 25px/28px Flood Std;
+  }
+  
+  #section2 .container{
+    display:grid;
+    grid-template-columns:1fr 1fr;/*change*/
+    grid-gap:3em;
+  }
+
+   #whatwedo .container{
+    display:grid;
+    grid-template-rows:200px 2fr;
+    grid-template-columns:1fr 1fr
+  }
+  #whatwedo .container  #header{
+    grid-area:1/1/2/3;
+    place-self:center;
+  }
+  #whatwedo .container .wrapper{
+    grid-area:2/1/3/3;
+    display:grid;
+    grid-template-rows:1fr 1fr 1fr;
+    grid-template-columns:1fr 1fr;
+    grid-gap:4em;
+  }
+    #whatwedo .container .wrapper .box1{
       grid-area:1/1/2/3;
-      align-self:center;
     }
-    #takeaction .container #inner-box1{
+    #whatwedo .container .wrapper .box2{
+      grid-area:2/1/3/3;
+    }
+    #whatwedo .container .wrapper .box3{
       grid-area:3/1/4/3;
     }
-    #takeaction .container #inner-box2{
-      grid-area:5/1/6/3;
+  #whatwedo .container .wrapper .box1,.box2,.box3{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    display:grid;
+    grid-template-columns:2em 1fr 2em;
+    grid-template-rows:1fr 1fr;
+  }
+  #whatwedo .container .wrapper .snap{
+    max-height:300px;
+    width:100%;
+  }
+  #whatwedo .container .wrapper #snap1,#snap2,#snap3{
+    grid-area:1/2/2/3;
+    margin-top:-10%;
+  }
+  #whatwedo .container .wrapper #content1,#content2,#content3{
+    grid-area:2/2/3/3;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    padding-top:0%;
+    padding-left:3%;
+    padding-right:3%;
+  }
+  #whatwedo .container .wrapper .content h3{
+      font: Bold 18px/20px Helvetica;
     }
-    #takeaction .container #img1{
-      grid-area:2/1/3/3;
+  #whatwedo .container .wrapper .content p{
+      font: Light 14px/18px Helvetica;
     }
-    #takeaction .container #img2{
-      grid-area:4/1/5/3;
+  #whatwedo .container .wrapper .content button{
+      background: #C1F7D5 0% 0% no-repeat padding-box;
+      border-radius: 100px;
+      opacity: 1;
     }
-    
-    #subscribe{
-        background: #C1F7D5 0% 0% no-repeat padding-box;
-        opacity: 1;
+  #whatwedo .container #header h2{
+      font: Bold 20px/23px Helvetica;
     }
-    #subscribe .container,footer .container{
+
+  #take-action .container{
       display:grid;
-      grid-template-rows:1fr;/*change*/
-    }
-    
-    #subscribe .container input{
-        background: #FFFFFF 0% 0% no-repeat padding-box;
-        border-radius: 100px;
-        padding:1%;
-        font-size: 17px;
-        opacity: 1;
-      
-    }
-    #subscribe .container h3{
-        font: Bold 18px Helvetica;
-        letter-spacing: 0px;
-        color: #354463;
-    }
-    
-    footer{
-        background: #FFFFFF 0% 0% no-repeat padding-box;
-        opacity: 1;
-    }
-    footer .container{
-      display:grid;
+      grid-template-rows:200px 1fr;
       grid-template-columns:1fr 1fr;
-      grid-gap:1em;
+  }
+  #take-action .container #header{
+      grid-area:1/1/2/3;
+  }
+  #take-action .container .wrapper{
+      grid-area:2/1/3/3;
+      grid-template-rows:1fr 1fr 1fr;
+      grid-gap:2em;
+  }
+  #take-action .container .wrapper .box h3{
+      font: Bold 18px/20px Helvetica;
+  }
+  
+  #stories .container{
+    padding-top:5%;
+    padding-bottom: 5%;
+    display:grid;
+    grid-template-rows:1fr 1fr 50px;
+  }
+  #stories .container #content{
+    opacity: 1;
+    width:100%;
+    min-height:300px;
+    grid-row:2/3;
+    background-color: #354463;
+    margin-top:0;
+  }
+  
+  #stories .container h3{
+      font: Bold 20px Helvetica;
+  }
+  #stories .container p{
+      font: Regular 14px/17px Helvetica;
+  }
+  
+  #stories fieldset{
+      grid-row:1/2;
+      min-height: 300px;
+      width:100%;
+      background: transparent url('../img/lady-baby.png') no-repeat center;
+      background-size: cover;
+  }
+  #stories .container button{
+    grid-row:3/4;
+    font-size:14px;
+    width:50%;
+    place-self:center;
+  }
+  
+  #takeaction h2{
+      font: Regular 30px Flood Std;
+      letter-spacing: 0px;
+      color: #FFFFFF;
+  }
+
+  #takeaction .container .box h3{
+      font: Bold 18px/20px Helvetica;
+  }
+  #takeaction .container .box p{
+      font: Light 14px/20px Helvetica;
+  }
+  #takeaction .container{
+    display:grid;
+    grid-template-rows:200px 1fr 1fr 1fr 1fr;
+    grid-template-columns:1fr 1fr;
+    grid-gap:1em;
+  }
+  #takeaction .container h2{
+    grid-area:1/1/2/3;
+    align-self:center;
+  }
+  #takeaction .container #inner-box1{
+    grid-area:3/1/4/3;
+  }
+  #takeaction .container #inner-box2{
+    grid-area:5/1/6/3;
+  }
+  #takeaction .container #img1{
+    grid-area:2/1/3/3;
+  }
+  #takeaction .container #img2{
+    grid-area:4/1/5/3;
+  }
+  
+  #subscribe .container,footer .container{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:1fr 3em 3em;
+    grid-gap:1em;
+  }
+  
+  #subscribe .container input{
+      grid-area:2/1/3/3;
+      padding:1%;
+      font-size: 17px;
+  }
+    #subscribe .container button{
+      grid-area:3/1/4/2;
     }
-    footer .container .title{
-      grid-column:1/2;
-    }
-    footer .container .contact-info{
-      grid-column:2/3;
-    }
-    footer .container .link{
-      grid-column:1/2;
-    }
-    footer .container .social-network{
-      grid-column:2/3;
-    }
-    footer .container .hashtag{
-      grid-column:1/3;
-    }
-    
-    footer .container h3{
-        font: Regular 14px/17px Helvetica;
-        letter-spacing: 0.56px;
-        color: #354463;
-    }
-    footer .container h2{
-        font: Regular 28px/25px Helvetica;
-        letter-spacing: 0.56px;
-        color: #354463;
-        text-align:right;
-    }
-    footer .container p{
-        text-align: left;
-        font: Light 14px/20px Helvetica;
-        letter-spacing: -0.14px;
-        color: #354463;
-    }
-    }
+  #subscribe .container h3{
+      grid-area:1/1/2/3;
+      font: Bold 18px Helvetica;
+
+  }
+  
+  footer .container{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap:1em;
+  }
+  footer .container .title{
+    grid-area:1/1/2/2;
+  }
+  footer .container .contact-info{
+    grid-area:1/2/2/3;
+  }
+  footer .container .link{
+    grid-area:2/1/3/2;
+  }
+  footer .container .social-network{
+    grid-area:2/2/3/3;
+  }
+  footer .container .hashtag{
+    grid-area:3/1/4/3;
+  }
+  
+  footer .container h3{
+      font: Regular 14px/17px Helvetica;
+      letter-spacing: 0.56px;
+      color: #354463;
+  }
+  footer .container h2{
+      font: Regular 28px/25px Helvetica;
+      letter-spacing: 0.56px;
+      color: #354463;
+      text-align:right;
+  }
+  footer .container p{
+      text-align: left;
+      font: Light 14px/20px Helvetica;
+      letter-spacing: -0.14px;
+      color: #354463;
+  }
+  }
